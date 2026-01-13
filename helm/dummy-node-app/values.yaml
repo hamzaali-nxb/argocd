@@ -2,7 +2,7 @@ replicaCount: 1
 
 image:
   repository: dummy-node-app
-  tag: "7290d8f"
+  tag: "d2e4deb"
   pullPolicy: IfNotPresent
 
 service:
