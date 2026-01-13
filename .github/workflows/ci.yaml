@@ -6,7 +6,7 @@ on:
 
 permissions:
   contents: write  
-  
+
 jobs:
   build:
     runs-on: self-hosted
@@ -24,9 +24,9 @@ jobs:
         run: |
           docker build -t localhost:5000/dummy-node-app:${TAG} app
 
-      - name: Push image
+      - name: Load image into kind cluster
         run: |
-          docker push localhost:5000/dummy-node-app:${TAG}
+          kind load docker-image dummy-node-app:${TAG} --name preview-env
 
       - name: Update Helm values
         run: |
