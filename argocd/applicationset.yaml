@@ -6,7 +6,7 @@ metadata:
 spec:
   generators:
     - git:
-        repoURL: git@github.com:hamzaali-nxb/argocd.git
+        repoURL: https://github.com/hamzaali-nxb/argocd.git
         revision: master
         directories:
           - path: helm/dummy-node-app
@@ -16,7 +16,7 @@ spec:
     spec:
       project: default
       source:
-        repoURL: git@github.com:hamzaali-nxb/argocd.git
+        repoURL: https://github.com/hamzaali-nxb/argocd.git
         targetRevision: master
         path: '{{path}}'
         helm:
