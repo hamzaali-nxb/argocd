@@ -26,7 +26,7 @@ jobs:
 
       - name: Load image into kind cluster
         run: |
-          kind load docker-image dummy-node-app:${TAG} --name preview-env
+          kind load docker-image localhost:5000/dummy-node-app:${TAG} --name preview-env
 
       - name: Update Helm values
         run: |
