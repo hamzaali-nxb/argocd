@@ -2,7 +2,7 @@ replicaCount: 1
 
 image:
   repository: localhost:5000/dummy-node-app
-  tag: "239d725"
+  tag: "4897fd9"
   pullPolicy: IfNotPresent
 
 service:
