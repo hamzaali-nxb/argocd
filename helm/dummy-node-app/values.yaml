@@ -2,7 +2,7 @@ replicaCount: 1
 
 image:
   repository: dummy-node-app
-  tag: "latest"
+  tag: "7290d8f"
   pullPolicy: IfNotPresent
 
 service:
