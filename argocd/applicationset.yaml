@@ -8,6 +8,7 @@ spec:
     - git:
         repoURL: https://github.com/hamzaali-nxb/argocd.git
         revision: master
+        requeueAfterSeconds: 300
         directories:
           - path: helm/dummy-node-app
   template:
